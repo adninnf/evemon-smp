@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - Evemon SMP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="vote-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo-icon">🌙</div>
+                <h1 class="logo-text">EVEMON SMP</h1>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="store.html" class="nav-link">Store</a></li>
+                <li><a href="vote.html" class="nav-link active">Vote</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="rules.html" class="nav-link">Rules</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header dengan Gambar Logo -->
+    <div class="page-header">
+        <div class="container">
+            <!-- Gambar Logo di bawah navbar -->
+            <div class="logo-image-container">
+                <img src="images/tulisan.png" alt="Evemon SMP" class="logo-image">
+            </div>
+            
+            <h1 class="page-title">Vote for Server</h1>
+            <p class="page-subtitle">Bantu server kami berkembang dengan memberikan suara di daftar server Minecraft teratas!</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="vote-container">
+                <!-- Deskripsi Utama -->
+                <div class="vote-description">
+                    <p><strong>Dukungan Anda berarti segalanya bagi komunitas kami.</strong> Dengan memberikan vote untuk server Evemon SMP, Anda membantu meningkatkan popularitas server dan memberikan kesempatan bagi lebih banyak pemain untuk bergabung dengan komunitas kami.</p>
+                </div>
+
+                <!-- Keuntungan Voting -->
+                <div class="features-grid" style="margin-top: 50px;">
+                    <div class="feature-card">
+                        <div class="feature-icon">👍</div>
+                        <h3>Voting Mudah</h3>
+                        <p>Proses voting satu klik dengan konfirmasi instan. Cukup klik link di bawah dan vote dalam hitungan detik!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Dukungan Komunitas</h3>
+                        <p>Bergabung dengan ribuan pemain yang mendukung server kami. Bersama kita bisa membuat komunitas lebih besar!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Manfaat Server</h3>
+                        <p>Peringkat yang lebih tinggi berarti lebih banyak pemain dan pengalaman yang lebih baik untuk semua. Situasi menang-menang!</p>
+                    </div>
+                </div>
+
+                <!-- Tombol Vote Utama -->
+                <div style="text-align: center; margin: 50px 0;">
+                    <a href="https://minecraft-mp.com/server-s354317" 
+                       target="_blank" 
+                       class="btn-primary" 
+                       style="padding: 20px 50px; font-size: 1.4rem;">
+                        <i class="fas fa-vote-yea"></i> Vote Sekarang di Minecraft-MP
+                    </a>
+                    <p style="margin-top: 15px; color: var(--primary-light);">
+                        Klik tombol di atas untuk langsung menuju halaman voting
+                    </p>
+                </div>
+
+                <!-- Panduan Voting -->
+                <div class="note" style="margin-top: 40px;">
+                    <h3 style="margin-bottom: 15px;">📋 Cara Vote</h3>
+                    <ol style="padding-left: 20px; margin-bottom: 15px;">
+                        <li>Klik tombol "Vote Sekarang" di atas</li>
+                        <li>Anda akan diarahkan ke halaman Minecraft-MP</li>
+                        <li>Scroll ke bawah dan klik tombol "Vote"</li>
+                        <li>Jika diminta login, buat akun atau login terlebih dahulu (gratis)</li>
+                        <li>Setelah vote, kembali ke server dan ketik <code>/vote claim</code></li>
+                    </ol>
+                    <p><strong>Note:</strong> Anda bisa vote setiap 24 jam sekali!</p>
+                </div>
+
+                <!-- Informasi Tambahan -->
+                <div class="note" style="margin-top: 40px;">
+                    <h3 style="margin-bottom: 15px;">💡 Mengapa Vote Penting?</h3>
+                    <p>Voting bukan hanya tentang hadiah, tapi juga tentang:</p>
+                    <ul style="padding-left: 20px; margin-top: 10px;">
+                        <li><strong>Meningkatkan visibilitas</strong> - Semakin tinggi rank, semakin banyak pemain baru yang menemukan server</li>
+                        <li><strong>Membuktikan kualitas</strong> - Server dengan vote banyak dianggap lebih aktif dan berkualitas</li>
+                        <li><strong>Mendukung pengembangan</strong> - Popularitas membantu tim developer untuk terus memperbaiki dan menambah fitur</li>
+                        <li><strong>Memperkuat komunitas</strong> - Setiap vote adalah bukti dukungan untuk komunitas yang kita bangun bersama</li>
+                    </ul>
+                </div>
+
+                <!-- Pesan Ajakan -->
+                <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(64, 156, 255, 0.1); border-radius: 15px; border: 2px solid rgba(64, 156, 255, 0.3);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px;">✨ Jadilah Bagian dari Kesuksesan Server!</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                        Hanya perlu 1 menit sehari untuk memberikan dukungan Anda. Setiap vote sangat berarti untuk perkembangan server kita.
+                    </p>
+                    <a href="https://minecraft-mp.com/server-s354317" 
+                       target="_blank" 
+                       class="btn-primary" 
+                       style="padding: 15px 40px;">
+                        <i class="fas fa-heart"></i> Dukung Server Kami!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🌙</div>
+                        <h3>EVEMON SMP</h3>
+                    </div>
+                    <p class="footer-description">
+                        Server Minecraft survival economy terbaik di Indonesia
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="vote.html">Vote</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Server</h4>
+                    <ul class="footer-links">
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 EVEMON SMP. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://chat.whatsapp.com/" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://discord.gg/" target="_blank" class="social-link">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/copy-ip.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>

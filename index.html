@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Evemon SMP - Survival Economy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <div class="logo-icon">🌙</div>
+                    <h1 class="logo-text">EVEMON SMP</h1>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-links" id="nav-links">
+                    <li>
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li><a href="store.html" class="nav-link">Store</a></li>
+                    <li><a href="vote.html" class="nav-link">Vote</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="staff.html" class="nav-link">Staff</a></li>
+                    <li><a href="rules.html" class="nav-link">Rules</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Logo/Text Image di paling atas -->
+                    <div class="logo-image-container">
+                        <img
+                            src="images/tulisan.png"
+                            alt="Evemon SMP"
+                            class="logo-image"
+                        />
+                    </div>
+
+                    <!-- Layout seperti gambar - Statistik di bawah logo -->
+                    <div class="top-stats">
+                        <div class="top-stat-item">
+                            <div class="top-stat-icon">🌐</div>
+                            <div class="top-stat-info">
+                                <div class="top-stat-number">25+</div>
+                                <div class="top-stat-label">ONLINE PLAYERS</div>
+                            </div>
+                        </div>
+
+                        <div class="top-stat-item">
+                            <div class="top-stat-icon">👥</div>
+                            <div class="top-stat-info">
+                                <div class="top-stat-number">50+</div>
+                                <div class="top-stat-label">
+                                    DISCORD MEMBERS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IP Address dengan tombol copy -->
+                    <div class="server-ip-container">
+                        <div class="server-ip-display" id="server-ip">
+                            evemonxamica.raznar.net
+                            <button
+                                class="copy-ip-btn"
+                                id="copy-ip-btn"
+                                title="Salin IP"
+                            >
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="copy-status" id="copy-status"></div>
+                    </div>
+
+                    <!-- Tombol Utama - PLAY NOW di atas, DISCORD di bawah -->
+                    <div class="hero-buttons">
+                        <div class="hero-button-group">
+                            <!-- Play Now Button -->
+                            <button class="btn-primary" id="play-now-btn">
+                                <i class="fas fa-play-circle"></i> Play Now
+                            </button>
+                        </div>
+                        
+                        <div class="hero-button-group">
+                            <!-- Discord Button -->
+                            <a
+                                href="https://discord.gg/"
+                                target="_blank"
+                                class="btn-secondary"
+                            >
+                                <i class="fab fa-discord"></i> Join Discord
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Info Tambahan -->
+                    <div class="server-info-grid">
+                        <div class="info-item">
+                            <div class="info-icon">🎮</div>
+                            <div class="info-text">
+                                <div class="info-title">Version</div>
+                                <div class="info-desc">1.8 - 1.21.x</div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📝</div>
+                            <div class="info-text">
+                                <div class="info-title">Player Register</div>
+                                <div class="info-desc">50+</div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🔌</div>
+                            <div class="info-text">
+                                <div class="info-title">Bedrock Port</div>
+                                <div class="info-desc">25067</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <h2 class="section-title">What is Evemon SMP?</h2>
+                <div class="about-content">
+                    <p>
+                        Evemon SMP adalah server Minecraft survival economy
+                        terkemuka yang menghadirkan pengalaman bermain yang unik
+                        dan menarik untuk pemain Java dan Bedrock Edition.
+                        Bergabunglah dengan komunitas kami dan mulai petualangan
+                        survival-mu!
+                    </p>
+                    <p>
+                        Dengan sistem ekonomi yang dinamis, fitur claim land
+                        yang adil, dan komunitas yang ramah, Evemon SMP
+                        memberikan pengalaman bermain Minecraft yang tak
+                        terlupakan.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Server Economy Terbaik</h2>
+                <div class="features-content">
+                    <p>
+                        Evemon SMP menawarkan sistem ekonomi yang kompleks dan
+                        mendalam, di mana pemain dapat berpartisipasi dalam
+                        perdagangan, investasi, dan pengembangan bisnis virtual.
+                        Dengan fitur-fitur inovatif seperti pasar dinamis,
+                        sistem rank permanen, dan event ekonomi mingguan, setiap
+                        pemain memiliki kesempatan untuk membangun kekayaan
+                        mereka sendiri.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚔️</div>
+                        <h3>Java & Bedrock</h3>
+                        <p>
+                            Dukung pemain Java dan Bedrock Edition dalam satu
+                            server terintegrasi.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Economy System</h3>
+                        <p>
+                            Sistem ekonomi yang dinamis dengan pasar
+                            player-driven yang fair.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🇮🇩</div>
+                        <h3>Indonesia Server</h3>
+                        <p>
+                            Server lokal Indonesia dengan latency rendah untuk
+                            pengalaman bermain optimal.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>24/7 Online</h3>
+                        <p>
+                            Server online 24 jam tanpa henti dengan uptime
+                            99.9%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="community-section">
+            <div class="container">
+                <div class="community-grid">
+                    <div class="community-card">
+                        <div class="community-icon">🤝</div>
+                        <h3>Komunitas Aktif</h3>
+                        <p>
+                            Bergabung dengan ratusan pemain aktif yang siap
+                            membantu dan berinteraksi dalam komunitas Discord
+                            kami yang ramah.
+                        </p>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon">🔄</div>
+                        <h3>Cross-Platform</h3>
+                        <p>
+                            Mainkan di Java Edition atau Bedrock Edition tanpa
+                            batasan. Semua pemain dapat berinteraksi dalam satu
+                            dunia.
+                        </p>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon">🛡️</div>
+                        <h3>Support 24/7</h3>
+                        <p>
+                            Tim admin dan staff kami siap membantu Anda 24 jam
+                            sehari untuk memastikan pengalaman bermain yang
+                            optimal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <div class="logo-icon">🌙</div>
+                            <h3>EVEMON SMP</h3>
+                        </div>
+                        <p class="footer-description">
+                            Server Minecraft survival economy terbaik di
+                            Indonesia
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="vote.html">Vote</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Server</h4>
+                        <ul class="footer-links">
+                            <li><a href="rules.html">Rules</a></li>
+                            <li><a href="staff.html">Staff</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 EVEMON SMP. All rights reserved.</p>
+                    <div class="footer-social">
+                        <a
+                            href="https://chat.whatsapp.com/"
+                            target="_blank"
+                            class="social-link"
+                        >
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a
+                            href="https://discord.gg/"
+                            target="_blank"
+                            class="social-link"
+                        >
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/copy-ip.js"></script>
+        <script src="js/music.js"></script>
+    </body>
+</html>
