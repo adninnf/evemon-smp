@@ -10,9 +10,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="shortcut icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
+    
+    <!-- Favicon PNG -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <style>
+        /* ===== STAFF SKIN - KOTAK, TANPA BORDER ===== */
+        .staff-skin {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+            margin: 0 auto 15px;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            background: transparent;
+        }
+
+        .staff-skin:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+        }
+
+        /* Tablet (max-width: 768px) */
+        @media (max-width: 768px) {
+            .staff-skin {
+                width: 130px;
+                height: 130px;
+            }
+        }
+
+        /* Mobile (max-width: 480px) */
+        @media (max-width: 480px) {
+            .staff-skin {
+                width: 110px;
+                height: 110px;
+            }
+        }
+    </style>
 </head>
 <body class="staff-page">
     <!-- Navigation Bar -->
@@ -22,11 +61,9 @@
                 <div class="logo-icon">🌙</div>
                 <h1 class="logo-text">EVEMON SMP</h1>
             </div>
-
             <button class="mobile-menu-btn" id="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
-
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="store.html" class="nav-link">Store</a></li>
@@ -41,11 +78,9 @@
     <!-- Header dengan Gambar Logo -->
     <div class="page-header">
         <div class="container">
-            <!-- Gambar Logo di bawah navbar -->
             <div class="logo-image-container">
                 <img src="images/tulisan.png" alt="Evemon SMP" class="logo-image">
             </div>
-            
             <h1 class="page-title">Our Team</h1>
             <p class="page-subtitle">Tim staff yang berdedikasi untuk menjaga server tetap berjalan lancar</p>
         </div>
@@ -55,118 +90,72 @@
     <main class="main-content">
         <div class="container">
             <div class="staff-container">
-                <!-- Owner -->
+
+                <!-- OWNER -->
                 <div class="staff-category">
                     <h2 class="category-title">👑 OWNER</h2>
                     <div class="staff-grid">
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.4), rgba(30, 100, 200, 0.4)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto;">
-                                    👑
-                                </div>
-                            </div>
+                            <img src="images/skins/skin1.png" alt="Duke" class="staff-skin">
                             <h3 class="staff-name">Duke</h3>
                             <p class="staff-role">Owner & Founder</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Admin -->
+                <!-- ADMIN -->
                 <div class="staff-category">
                     <h2 class="category-title">🛡️ ADMIN</h2>
                     <div class="staff-grid">
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    ⚡
-                                </div>
-                            </div>
+                            <img src="images/skins/skin2.png" alt="Abdul Karzo" class="staff-skin">
                             <h3 class="staff-name">Abdul Karzo</h3>
                             <p class="staff-role">Head Admin</p>
                         </div>
-
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    🔧
-                                </div>
-                            </div>
+                            <img src="images/skins/skin3.png" alt="Nnimu Pemboy" class="staff-skin">
                             <h3 class="staff-name">Nnimu Pemboy</h3>
                             <p class="staff-role">Admin</p>
                         </div>
-
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    👥
-                                </div>
-                            </div>
+                            <img src="images/skins/skin4.png" alt="Rika Anomali" class="staff-skin">
                             <h3 class="staff-name">Rika Anomali</h3>
                             <p class="staff-role">Admin</p>
                         </div>
-
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    🛠️
-                                </div>
-                            </div>
+                            <img src="images/skins/skin5.png" alt="Ramzi" class="staff-skin">
                             <h3 class="staff-name">Ramzi</h3>
                             <p class="staff-role">Admin</p>
                         </div>
-
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    🏗️
-                                </div>
-                            </div>
+                            <img src="images/skins/skin6.png" alt="Asyifa Ratu" class="staff-skin">
                             <h3 class="staff-name">Asyifa Ratu</h3>
                             <p class="staff-role">Builder</p>
                         </div>
-
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    📊
-                                </div>
-                            </div>
+                            <img src="images/skins/skin7.png" alt="Bayu Tachometer" class="staff-skin">
                             <h3 class="staff-name">Bayu Tachometer</h3>
                             <p class="staff-role">Admin</p>
                         </div>
-
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    🎉
-                                </div>
-                            </div>
+                            <img src="images/skins/skin8.png" alt="Bude Elin Kila" class="staff-skin">
                             <h3 class="staff-name">Bude Elin Kila</h3>
                             <p class="staff-role">Admin</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Developer -->
+                <!-- DEVELOPER -->
                 <div class="staff-category">
                     <h2 class="category-title">💻 DEVELOPER</h2>
                     <div class="staff-grid">
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    💻
-                                </div>
-                            </div>
+                            <img src="images/skins/skin1.png" alt="Duke" class="staff-skin">
                             <h3 class="staff-name">Duke</h3>
                             <p class="staff-role">Lead Developer</p>
                         </div>
-
                         <div class="staff-card">
-                            <div class="staff-avatar" style="margin-bottom: 15px;">
-                                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, rgba(64, 156, 255, 0.3), rgba(30, 100, 200, 0.3)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto;">
-                                    🔌
-                                </div>
-                            </div>
+                            <img src="images/skins/skin9.png" alt="Yahuu" class="staff-skin">
                             <h3 class="staff-name">Yahuu</h3>
                             <p class="staff-role">Developer</p>
                         </div>
@@ -184,7 +173,6 @@
                         <li>Mengawasi penerapan aturan server</li>
                         <li>Mengembangkan fitur dan konten server</li>
                     </ul>
-                    
                     <p style="margin-top: 15px;"><strong>Note:</strong> Staff tidak pernah meminta password, uang, atau item secara pribadi. Laporkan segera jika ada yang mencurigakan.</p>
                 </div>
 
@@ -198,7 +186,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
